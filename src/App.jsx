@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
                 <h1>Hello World!</h1>
                 <Button />
             </div>
+            <Footer />
         </>
     );
 }
