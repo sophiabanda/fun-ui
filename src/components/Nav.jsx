@@ -4,22 +4,22 @@ import { useState } from 'react';
 import NavModal from './NavModal';
 
 export default function Nav() {
-    const [pressed, setPressed] = useState(false);
+    const [menuClick, setMenuClick] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
     function handleMenuClick() {
         if (showModal) {
             setShowModal(false);
-            setPressed(false);
+            setMenuClick(false);
         } else {
-            setPressed(true);
+            setMenuClick(true);
             setShowModal(true);
         }
     }
 
     function closeModal() {
         setShowModal(false);
-        setPressed(false);
+        setMenuClick(false);
     }
 
     return (
@@ -32,7 +32,7 @@ export default function Nav() {
                 />
                 <img
                     onClick={handleMenuClick}
-                    className={pressed && showModal ? 'rotate' : null}
+                    className={menuClick && showModal ? 'rotate' : null}
                     id="menu-icon"
                     src="src/assets/menu_icon.svg"
                     alt="menu icon"
