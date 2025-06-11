@@ -7,8 +7,9 @@ export default function NavModal({ show, onClose }) {
             onClick={onClose}
         >
             <div onClick={onClose} className="menu-modal">
-                <h2>Company Menu</h2>
-
+                <div className="nav-header">
+                    <h2>Company Menu</h2>
+                </div>
                 <ul>
                     <a href="">
                         <li>Item 1</li>

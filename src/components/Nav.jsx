@@ -7,14 +7,19 @@ export default function Nav() {
     const [pressed, setPressed] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
-    function onPress() {
-        setPressed(true);
-        setShowModal(true);
-        setTimeout(() => setPressed(false), 1000);
+    function handleMenuClick() {
+        if (showModal) {
+            setShowModal(false);
+            setPressed(false);
+        } else {
+            setPressed(true);
+            setShowModal(true);
+        }
     }
 
     function closeModal() {
         setShowModal(false);
+        setPressed(false);
     }
 
     return (
@@ -26,8 +31,8 @@ export default function Nav() {
                     alt="company logo"
                 />
                 <img
-                    onClick={onPress}
-                    className={pressed ? 'rotate show' : null}
+                    onClick={handleMenuClick}
+                    className={pressed && showModal ? 'rotate' : null}
                     id="menu-icon"
                     src="src/assets/menu_icon.svg"
                     alt="menu icon"
