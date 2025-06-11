@@ -1,0 +1,12 @@
+nav {
+    background-color: white;
+    height: 5vh;
+    margin: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#company-logo {
+    margin: 2px;
+}
