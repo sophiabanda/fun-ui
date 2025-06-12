@@ -5,4 +5,7 @@
     width: 100%;
     color: rgb(56, 55, 55);
     text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 0.7em;
 }
