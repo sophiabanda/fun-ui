@@ -43,7 +43,7 @@ const products = [
     },
     {
         id: 7,
-        product: 'in',
+        product: 'ignos',
         description:
             'Suspendisse potenti. Cras in purus eu magna vulputate luctus.',
         price: '$1538.21',
