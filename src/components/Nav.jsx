@@ -27,7 +27,7 @@ export default function Nav() {
             <nav>
                 <img
                     id="company-logo"
-                    src="src/assets/react.svg"
+                    src="public/icons8-rhinoceros-64.png"
                     alt="company logo"
                 />
                 <img
