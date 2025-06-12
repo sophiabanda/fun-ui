@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Button.css';
+import '../index.css';
 
 export default function Button() {
     const [clicked, setClicked] = useState(false);
