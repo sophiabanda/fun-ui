@@ -1,5 +1,6 @@
 .card-container {
     display: grid;
+    max-width: 1242px;
     font-size: 1em;
     justify-content: center;
     align-items: center;
@@ -26,6 +27,8 @@
     width: 100%;
     align-items: center;
     margin-top: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 p {
